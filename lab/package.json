@@ -1,23 +1,23 @@
 {
   "name": "@brightlayer-ui/angular-blui-lab",
-  "version": "0.0.0",
+  "version": "0.0.0-beta.0",
   "description": "Experimental components, services, utilities for angular",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
     "test": "ng test",
     "test:ci": "ng test --watch false",
-    "prettier": "prettier \\\\\\\"src/**/**.{ts,json,css,scss,html}\\\\\\\" --write",
-    "prettier:check": "prettier \\\\\\\"src/**/**.{ts,json,css,scss,html}\\\\\\\" --check",
-    "lint": "eslint \\\\\\\"src/**/**.ts\\\\\\\"",
-    "lint:fix": "eslint \\\\\\\"src/**/**.ts\\\\\\\" --fix",
+    "test:artifacts": "sh ../scripts/testArtifacts.sh",
+    "prettier": "prettier \"src/**/**.{ts,json,css,scss,html}\" --write",
+    "prettier:check": "prettier \"src/**/**.{ts,json,css,scss,html}\" --check",
+    "lint": "eslint \"src/**/**.ts\"",
+    "lint:fix": "eslint \"src/**/**.ts\" --fix",
     "watch": "npm-watch",
-    "serve": "npm-watch",
-    "copy-to-showcase": "cp -r src/. ../demo/src/blui-lab/",
+    "copy-to-demo": "cp -r src/. ../demo/src/blui-lab/",
     "tag:package": "cp ../CHANGELOG.md CHANGELOG.md && npx -p @brightlayer-ui/tag blui-tag -s -angular-blui-lab"
   },
   "watch": {
-    "copy-to-showcase": {
+    "copy-to-demo": {
       "patterns": ["src"],
       "extensions": "ts,html,scss",
       "quiet": false,
@@ -62,7 +62,7 @@
     "prettier": "^2.5.1",
     "rxjs": "~6.6.0",
     "ts-node": "~10.2.1",
-    "typescript": "4.4.4",
+    "typescript": "4.6.2",
     "yarn-audit-fix": "^6.4.4",
     "zone.js": "~0.11.4"
   },

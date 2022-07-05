@@ -21,5 +21,6 @@ yarn-error.log*
 /components/coverage
 /components/.angular
 /demo/.angular
+/lab/.angular
 
 /demos/showcase/src/blui-lab/
