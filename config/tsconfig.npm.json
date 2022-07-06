@@ -1,4 +1,4 @@
-/* This tsconfig file is used to read dependencies via NPM-installed @blui-lab/angular dependency */
+/* This configuration is used in the Demo Application & reads the published instance of @blui-lab/angular, found in node_modules. */
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {

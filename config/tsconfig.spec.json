@@ -1,4 +1,4 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+/* Configuration used while testing. Reads the local instance of @blui-lab/angular. */
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {

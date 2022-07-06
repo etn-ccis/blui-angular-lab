@@ -1,3 +1,4 @@
+/* This configuration is used when building the @blui-lab/angular package. */
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
