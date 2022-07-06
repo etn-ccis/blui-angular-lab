@@ -13,6 +13,7 @@ NC='\033[0m' # No Color
 rm -rf ./dist
 
 yarn
+cd lab
 yarn build
 cd ..
 

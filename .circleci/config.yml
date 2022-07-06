@@ -16,7 +16,7 @@ jobs:
             - run:
                   name: Install Dependencies
                   command: |
-                      cd components
+                      cd lab
                       yarn install --frozen-lockfile
             - save_cache:
                   name: Save Cache
@@ -26,11 +26,11 @@ jobs:
             - run:
                   name: Prettier Check
                   command: |
-                      cd lab && yarn prettier:check
+                      yarn prettier:click
             - run:
                   name: Lint
                   command: |
-                      cd lab && yarn lint
+                      yarn lint
            # - run:
            #       name: Test
            #       command: |
@@ -38,7 +38,7 @@ jobs:
             - run:
                   name: Build Library
                   command: |
-                      cd lab && yarn build
+                      yarn build
             - run:
                   name: Test Artifacts
                   command: |

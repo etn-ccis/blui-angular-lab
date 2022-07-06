@@ -1,78 +1,27 @@
-# Brightlayer UI Angular Components
+# AngularBluiLabDemo
 
-[![](https://img.shields.io/circleci/project/github/brightlayer-ui/angular-component-library/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/angular-component-library/tree/master)
-![npm](https://img.shields.io/npm/v/@brightlayer-ui/angular-components?label=%40brightlayer-ui%2Fangular-components) [![codecov](https://codecov.io/gh/brightlayer-ui/angular-component-library/branch/master/graph/badge.svg?token=DB9EMVFAFJ)](https://codecov.io/gh/brightlayer-ui/angular-component-library)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
-This is a library of custom components for use in Brightlayer UI applications. For the most part, these components are meant to simplify building your application by providing re-usable components that implement common use cases in Brightlayer UI and eliminating the need to multiple teams to build their own components for these.
+## Development server
 
-Refer to the [Component Library](https://brightlayer-ui-components.github.io/angular/?path=/story/intro-welcome--to-brightlayer-ui) API documentation site for a list of available components or see the repository the [documentation](https://github.com/brightlayer-ui/angular-component-library/tree/master/docs) for each individual component.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Installation
+## Code scaffolding
 
-To install the Brightlayer UI angular components from NPM as a dependency for your project, you can run the following command in your project root:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```
-yarn add @brightlayer-ui/angular-components
-```
+## Build
 
-> **NOTE**: This install command will install the package from NPM. If you are a Brightlayer UI developer working with components locally, you will want to follow the manual linking instructions - see below.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-> **NOTE**: This component library requires that your application have @brightlayer-ui/themes and @angular/material installed.
+## Running unit tests
 
-## Building the Library
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-To work with this library, first clone down the repository:
+## Running end-to-end tests
 
-```
-git clone https://github.com/brightlayer-ui/angular-component-library
-cd angular-component-library
-```
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 
-The library can be built by running the following command. The resulting output will be in the /dist folder.
+## Further help
 
-```
-yarn build
-```
-
-There is also a demo project (/component-demo) in this repository that shows the components in use. You can automatically build the component library and link them to the node modules for the demo by running:
-
-```
-yarn link:components
-```
-
-## Compatibility
-
-The following table outlines which versions of Angular and Brightlayer UI resources will work together.
-
-| @brightlayer-ui/angular-components | @brightlayer-ui/angular-themes | @angular + @angular/material |
-| ---------------------------------- | ------------------------------ | ---------------------------- |
-| `^5.0.0`                           | `^6.1.0`                       | `^11.x`                      |
-| `^6.0.0`                           | `^6.3.0`                       | `^12.x`                      |
-| `^7.0.0`                           | `^7.0.0`                       | `^13.x`                      |
-
-## Running the demo projects
-
-This repository comes with two demo projects found within the `/demos` folder.
-The first is a [Storybook](https://storybook.js.org/) application that allows you to see the components in isolation and interact with their properties. The second is a Showcase project that shows a combination of components in the context of a realistic interface.
-
-You can build, link, and start the demo applications in a single step by calling either
-
-```
-yarn start:showcase
-```
-
-or
-
-```
-yarn start:storybook
-```
-
-from the root directory.
-
-## Using the Components
-
-See the [documentation](https://github.com/brightlayer-ui/angular-component-library/tree/master/docs) for information on using these components.
-
-## Browser Support
-
-Brightlayer UI libraries will work with any modern browser. For details refer to our [Browser Support](https://brightlayer-ui.github.io/development/frameworks-web/angular#browser-support) documentation.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,14 @@
+/* This tsconfig file is used to read dependencies via NPM-installed @blui-lab/angular dependency */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {}
+  },
+  "files": [
+    "../src/main.ts",
+    "../src/polyfills.ts"
+  ],
+  "include": [
+    "../src/**/*.d.ts"
+  ]
+}

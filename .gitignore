@@ -18,9 +18,6 @@ yarn-error.log*
 .firebase
 
 # meta
-/components/coverage
-/components/.angular
-/demo/.angular
-/lab/.angular
+coverage
+.angular
 
-/demos/showcase/src/blui-lab/
