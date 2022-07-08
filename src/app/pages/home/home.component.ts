@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import * as Colors from '@brightlayer-ui/colors';
 import { ViewportService } from '../../services/viewport.service';
-import { test, PasswordRequirement } from '@blui-lab/angular';
+import { PasswordRequirement } from '@blui-lab/angular';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -19,7 +19,7 @@ export class HomeComponent {
     constructor(private readonly _viewportService: ViewportService) {}
 
     ngOnInit(): void {
-        this.passwordRequirements = this._createPasswordRequirements();
+        this.passwordRequirements = this.createPasswordRequirements();
         this.passwordFormControl = new FormControl('');
     }
 
@@ -27,7 +27,7 @@ export class HomeComponent {
         return this._viewportService.isSmall();
     }
 
-    _createPasswordRequirements(): PasswordRequirement[] {
+    createPasswordRequirements(): PasswordRequirement[] {
         const req: PasswordRequirement[] = [];
         req.push({
             description: 'Must be between 8 and 16 characters',
