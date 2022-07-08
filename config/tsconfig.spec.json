@@ -1,0 +1,21 @@
+/* Configuration used while testing. Reads the local instance of @blui-lab/angular. */
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jasmine"
+    ],
+    "paths": {
+      "@blui-lab/angular": ["src/lab"],
+    }
+  },
+  "files": [
+    "../src/test.ts",
+    "../src/polyfills.ts"
+  ],
+  "include": [
+    "../src/**/*.spec.ts",
+    "../src/**/*.d.ts"
+  ]
+}

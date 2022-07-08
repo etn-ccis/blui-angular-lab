@@ -13,8 +13,7 @@ NC='\033[0m' # No Color
 rm -rf ./dist
 
 yarn
-yarn build
-cd ..
+yarn ng build lab -c production
 
 echo -e "${BLUE}Copying Package Resources${NC}"
 # Do not copy over the package.json, we need to keep the generated package.json made with the ng build command.

@@ -1,0 +1,14 @@
+/* This configuration is used in the Demo Application & reads the published instance of @blui-lab/angular, found in node_modules. */
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {}
+  },
+  "files": [
+    "../src/main.ts",
+    "../src/polyfills.ts"
+  ],
+  "include": [
+    "../src/**/*.d.ts"
+  ]
+}
