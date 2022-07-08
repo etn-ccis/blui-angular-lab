@@ -10,6 +10,9 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "importHelpers": true,
+        "paths": {
+            "@blui-lab/angular": ["src/lab"],
+        },
         "lib": [
             "es2018",
             "dom"

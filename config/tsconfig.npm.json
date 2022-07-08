@@ -2,7 +2,9 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "paths": {}
+      "paths": {
+          "@blui-lab/angular": ["node_modules/@blui-lab/angular"],
+      }
   },
   "files": [
     "../src/main.ts",

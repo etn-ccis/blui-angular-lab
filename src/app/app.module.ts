@@ -18,6 +18,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AppComponent } from './app.component';
 import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PasswordStrengthCheckerModule } from '@blui-lab/angular';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, PxbLogoComponent],
@@ -29,6 +33,10 @@ import { HomeComponent } from './pages/home/home.component';
         MatDividerModule,
         MatToolbarModule,
         MatIconModule,
+        MatFormFieldModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        PasswordStrengthCheckerModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

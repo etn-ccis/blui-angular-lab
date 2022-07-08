@@ -21,7 +21,22 @@
                 fxLayout.gt-xs="row"
                 style="width: 100%; justify-content: space-between"
             >
-                {{ sampleText }}
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input
+                        matInput
+                        #bluiPasswordField
+                        name="password"
+                        autocomplete="off"
+                        [type]="'text'"
+                        [formControl]="passwordFormControl"
+                    />
+                </mat-form-field>
+                <blui-password-strength-checker
+                    [(meetsRequirements)]="passesStrengthCheck"
+                    [formValue]="passwordFormControl?.value"
+                    [requirements]="passwordRequirements"
+                ></blui-password-strength-checker>
             </div>
         </div>
     </div>
