@@ -1,5 +1,5 @@
 import {
-    PasswordStrengthCheckComponent,
+    PasswordRequirementComponent,
     PasswordStrengthCheckerComponent,
 } from './password-strength-checker.component';
 import { NgModule } from '@angular/core';
@@ -9,8 +9,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-    declarations: [PasswordStrengthCheckComponent, PasswordStrengthCheckerComponent],
+    declarations: [PasswordRequirementComponent, PasswordStrengthCheckerComponent],
     imports: [MatListModule, MatCommonModule, BrowserModule, MatIconModule],
-    exports: [PasswordStrengthCheckComponent, PasswordStrengthCheckerComponent],
+    exports: [PasswordRequirementComponent, PasswordStrengthCheckerComponent],
 })
 export class PasswordStrengthCheckerModule {}

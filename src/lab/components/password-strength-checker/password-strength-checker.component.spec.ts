@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { PasswordStrengthCheckComponent } from './password-strength-checker.component';
+import { PasswordRequirementComponent } from './password-strength-checker.component';
 import { PasswordStrengthCheckerModule } from './password-strength-checker.module';
 
-describe('PasswordStrengthCheckComponent', () => {
-    let component: PasswordStrengthCheckComponent;
-    let fixture: ComponentFixture<PasswordStrengthCheckComponent>;
+describe('PasswordStrengthCheckerComponent', () => {
+    let component: PasswordRequirementComponent;
+    let fixture: ComponentFixture<PasswordRequirementComponent>;
 
     beforeEach(() => {
         void TestBed.configureTestingModule({
@@ -14,7 +14,7 @@ describe('PasswordStrengthCheckComponent', () => {
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(PasswordStrengthCheckComponent);
+        fixture = TestBed.createComponent(PasswordRequirementComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

@@ -25,16 +25,15 @@
                     <mat-label>Password</mat-label>
                     <input
                         matInput
-                        #bluiPasswordField
                         name="password"
                         autocomplete="off"
-                        [type]="'text'"
+                        type="text"
                         [formControl]="passwordFormControl"
                     />
                 </mat-form-field>
                 <blui-password-strength-checker
                     [(meetsRequirements)]="passesStrengthCheck"
-                    [formValue]="passwordFormControl?.value"
+                    [formValue]="passwordFormControl.value"
                     [requirements]="passwordRequirements"
                 ></blui-password-strength-checker>
             </div>
