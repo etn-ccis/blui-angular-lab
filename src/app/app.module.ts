@@ -22,11 +22,13 @@ import { PasswordStrengthCheckerModule } from '@blui-lab/angular';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, PxbLogoComponent],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         CommonModule,
         FlexLayoutModule,
         MatButtonModule,

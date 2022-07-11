@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import * as Colors from '@brightlayer-ui/colors';
 import { ViewportService } from '../../services/viewport.service';
-import { PasswordRequirement } from '@blui-lab/angular';
+import { PasswordRequirement, SampleService} from '@blui-lab/angular';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -16,11 +16,12 @@ export class HomeComponent {
     passwordFormControl: FormControl;
     passwordRequirements: PasswordRequirement[];
 
-    constructor(private readonly _viewportService: ViewportService) {}
+    constructor(private readonly _viewportService: ViewportService, private readonly _sampleService: SampleService) {}
 
     ngOnInit(): void {
         this.passwordRequirements = this.createPasswordRequirements();
         this.passwordFormControl = new FormControl('');
+        this._sampleService.testFunction();
     }
 
     isSmall(): boolean {
