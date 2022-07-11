@@ -30,6 +30,9 @@ New components should include a more extensive document that discusses a compone
 
 Testing is not required for entries in the BLUI Lab since entries are accepted as-is, but they are encouraged.  Our CI/CD pipeline will run unit tests to check that nothing breaks when new elements are added.
 
+### Themes
+
+If you are developing a component, check out the `lab/themes` folder when adding a theme for light and dark modes.  Right now are themes only support `blue` and `blueDark` themes, so the lab has mixins to support these two themes.
 
 ### Pull Requests
 
