@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import * as Colors from '@brightlayer-ui/colors';
 import { ViewportService } from '../../services/viewport.service';
-import { PasswordRequirement, SampleService} from '@blui-lab/angular';
+import { PasswordRequirement, SampleService } from '@blui-lab/angular';
 import { FormControl } from '@angular/forms';
 
 @Component({
