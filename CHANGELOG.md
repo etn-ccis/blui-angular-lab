@@ -5,7 +5,7 @@
 ### Added
 
 - Initial beta release
-- 
+
 ### Changed
 
 ### Fixed
