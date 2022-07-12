@@ -8,39 +8,44 @@ export type PasswordRequirement = {
 };
 
 @Component({
-    selector: 'blui-app-password-strength-check',
+    selector: 'blui-password-requirement',
     styleUrls: ['password-strength-checker.component.scss'],
     host: {
-        class: 'blui-password-strength-check',
+        class: 'blui-password-requirement',
     },
     template: `
-        <mat-list-item class="blui-auth-password-check">
-            <mat-icon class="blui-check-icon" [color]="success ? 'primary' : undefined">{{ icon }}</mat-icon>
-            <span class="blui-validation-message mat-subheading-1" [class.success]="success">
+        <mat-list-item class="blui-password-requirement-content">
+            <mat-icon class="blui-password-requirement-icon" [color]="success ? 'primary' : undefined">{{
+                icon
+            }}</mat-icon>
+            <span class="blui-password-requirement-validation-message mat-subheading-1" [class.success]="success">
                 {{ validationMessage }}
             </span>
         </mat-list-item>
     `,
 })
-export class PasswordStrengthCheckComponent {
+export class PasswordRequirementComponent {
     @Input() icon = 'done';
     @Input() validationMessage: string;
     @Input() success = false;
 }
+
 @Component({
     selector: 'blui-password-strength-checker',
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['password-strength-checker.component.scss'],
+    host: {
+        class: 'blui-password-requirement',
+    },
     template: `
         <mat-list class="blui-password-strength-checker-content">
-            <ng-container *ngFor="let requirement of requirements">
-                <blui-app-password-strength-check
-                    [success]="requirement.success"
-                    [icon]="requirement.icon || 'done'"
-                    [validationMessage]="requirement.description"
-                >
-                </blui-app-password-strength-check>
-            </ng-container>
+            <blui-password-requirement
+                *ngFor="let requirement of requirements"
+                [success]="requirement.success"
+                [icon]="requirement.icon || 'done'"
+                [validationMessage]="requirement.description"
+            >
+            </blui-password-requirement>
         </mat-list>
     `,
 })
