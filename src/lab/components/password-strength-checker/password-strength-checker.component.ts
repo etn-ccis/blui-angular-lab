@@ -15,7 +15,9 @@ export type PasswordRequirement = {
     },
     template: `
         <mat-list-item class="blui-password-requirement-content">
-            <mat-icon class="blui-password-requirement-icon" [color]="success ? 'primary' : undefined">{{ icon }}</mat-icon>
+            <mat-icon class="blui-password-requirement-icon" [color]="success ? 'primary' : undefined">{{
+                icon
+            }}</mat-icon>
             <span class="blui-password-requirement-validation-message mat-subheading-1" [class.success]="success">
                 {{ validationMessage }}
             </span>
@@ -37,7 +39,8 @@ export class PasswordRequirementComponent {
     },
     template: `
         <mat-list class="blui-password-strength-checker-content">
-            <blui-password-requirement *ngFor="let requirement of requirements"
+            <blui-password-requirement
+                *ngFor="let requirement of requirements"
                 [success]="requirement.success"
                 [icon]="requirement.icon || 'done'"
                 [validationMessage]="requirement.description"
