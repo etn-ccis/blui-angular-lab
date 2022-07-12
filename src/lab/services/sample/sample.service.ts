@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SampleService {
     testFunction(): void {
-        console.log('Sample function call');
+        /* eslint-disable-next-line */
+        console.info('Sample function call');
     }
 }
