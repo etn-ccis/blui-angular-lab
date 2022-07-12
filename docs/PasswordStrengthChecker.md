@@ -75,9 +75,9 @@ Parent element (`<blui-password-strength-checker>`) attributes:
 
 | @Input            | Description                                                | Type                    | Required | Default |
 |-------------------|------------------------------------------------------------|-------------------------|---------|---------|
-| meetsRequirements | Equals `true` if the requirements input are all met        | `boolean`               | yes     |         |
 | formValue         | The input value which the requirements are checked against | `string`                | yes     |         |
-| requirements      | An array of requirements to be met.                        | `PasswordRequirement[]` | yes     |         |
+| meetsRequirements | Equals `true` if the requirements input are all met        | `boolean`               | yes     |         |
+| requirements      | An array of requirements to be met                         | `PasswordRequirement[]` | yes     |         |
 
 </div>
 
@@ -85,11 +85,11 @@ Parent element (`<blui-password-strength-checker>`) attributes:
 
 Each Brightlayer UI component has classes which can be used to override component styles:
 
-| Name                                         | Description                                  |
-|----------------------------------------------|----------------------------------------------|
-| blui-password-strength-checker               | Styles applied to the tag                    |
-| blui-password-strength-checker-content       | Styles applied to the root element           |
-| blui-password-strength-check                 | Styles applied to a requirements tag         |
-| blui-password-requirement-content            | Styles applied to a requirements content     |
-| blui-password-requirement-icon               | Styles applied to a requirements icon        |
-| blui-password-requirement-validation-message | Styles applied to a requirements description |              
+| Name                                         | Description                                 |
+|----------------------------------------------|---------------------------------------------|
+| blui-password-strength-checker               | Styles applied to the tag                   |
+| blui-password-strength-checker-content       | Styles applied to the root element          |
+| blui-password-requirement                    | Styles applied to a requirement tag         |
+| blui-password-requirement-content            | Styles applied to a requirement content     |
+| blui-password-requirement-icon               | Styles applied to a requirement icon        |
+| blui-password-requirement-validation-message | Styles applied to a requirement description |              
