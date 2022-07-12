@@ -1,12 +1,12 @@
 # Brightlayer UI Lab - Angular
 
+The Brightlayer UI Lab is a sandbox environment for adopter teams to contribute back into Brightlayer UI but with lower barriers to entry. The BLUI Lab contains experimental components, services, and other utilities distributed via NPM as the `@blui-lab/angular` package.
 
-The Brightlayer UI Lab is a sandbox environment for adopter teams to contribute back into Brightlayer UI, but with lower barriers to entry.   
-In this package, one can expect to see early-access components, services, and other utilities.
+> Note: The items found within the BLUI Lab are not thoroughly tested nor scrutinized by the Brightlayer UI team and is distributed as-is.
 
-All resources available in the Angular Brightlayer UI Lab are distributed in via NPM in the `blui-lab/angular` package.
+## Licensing
 
-> Note: The items found within the BLUI Lab are not thoroughly tested nor scrutinized by the Brightlayer UI and are distributed as-is.
+Any contributions made into the BLUI Lab are hosted publicly. Do not submit Pull Requests that involve Copyrighted code or resources that are not licensed for public usage. 
 
 
 ## Getting Started

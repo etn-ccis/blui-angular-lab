@@ -2,10 +2,17 @@
 
 The BLUI Lab is a great place for experimental additions.  This guide discusses where new items should be placed, tested, and documented.
 
+### Requirements
+
+In order to contribute elements to the BLUI Lab, these requirements must be met: 
+
+- Any code that is contributed into the Brightlayer UI Lab becomes open to the public.  All contributions must be void of Copyright. 
+- Any components that are contributed must be built on top of Material UI.  In the context of angular, they must use Angular Material & not an alternative design system such as Bootstrap.
+- Any additional modules or components must be accompanied by a `README`.
+
 ### New Code Location
 
 The BLUI Lab source code can be located in `src/lab`.  It is currently sub-divided to support `components`, `directives`, `pipes`, & `services`.  To get started, place your addition in the correct subfolder and export it using the closest `index.ts`.
-
 
 ### Building the Lab
 
