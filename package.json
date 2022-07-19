@@ -1,6 +1,6 @@
 {
     "name": "@blui-lab/angular",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve demo -c development --open",
@@ -20,7 +20,6 @@
         "publish:package": "cd dist && rm -f *.tgz && set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
         "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-lab-angular"
     },
-    "private": true,
     "peerDependencies": {
       "@angular/material": "^14.0.0",
       "@angular/cdk": "^14.0.0"
