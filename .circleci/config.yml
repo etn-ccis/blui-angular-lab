@@ -35,13 +35,13 @@ jobs:
                   command: |
                       yarn test:ci
             - run:
+                  name: Build Demo
+                  command: |
+                      yarn build:demo
+            - run:
                   name: Build Lab
                   command: |
                       yarn build:lab
-            - run:
-                name: Build Demo
-                command: |
-                  yarn build:demo
             - run:
                   name: Test Artifacts
                   command: |
