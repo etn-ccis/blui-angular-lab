@@ -14,6 +14,7 @@ rm -rf ./dist
 
 yarn
 yarn ng build lab -c production
+cp -r ./src/lab/themes ./dist
 
 echo -e "${BLUE}Copying Package Resources${NC}"
 # Do not copy over the package.json, we need to keep the generated package.json made with the ng build command.
