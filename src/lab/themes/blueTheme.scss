@@ -3,7 +3,7 @@
 @mixin bluiLabBlueTheme() {
     .blui-password-requirement {
         mat-icon:not(.mat-primary),
-        .blui-password-strength-check-validation-message.success {
+        .blui-password-requirement-validation-message.success {
             color: map-get($blui-gray, 200);
         }
     }
