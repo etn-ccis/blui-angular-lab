@@ -1,6 +1,6 @@
 {
     "name": "@blui-lab/angular",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve demo -c development --open",
