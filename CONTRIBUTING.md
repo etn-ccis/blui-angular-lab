@@ -43,6 +43,6 @@ If you are developing a component, check out the `lab/themes` folder when adding
 
 ### Pull Requests
 
-For new additions to the BLUI Lab, open a Pull Request [here](https://github.com/brightlayer-ui/angular-blui-lab/pulls).  
+For new additions to the BLUI Lab, open a Pull Request [here](https://github.com/etn-ccis/blui-angular-blui-lab/pulls).  
 
 
