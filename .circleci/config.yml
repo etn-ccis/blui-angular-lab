@@ -1,12 +1,12 @@
 version: 2.1
 orbs:
-    codecov: codecov/codecov@1.1.3
+    codecov: codecov/codecov@3.2.2
     gh: circleci/github-cli@1.0.3
-    browser-tools: circleci/browser-tools@1.4.2
+    browser-tools: circleci/browser-tools@1.4.6
 jobs:
     build_lab:
         docker:
-            - image: cimg/node:16.19.0-browsers
+            - image: cimg/node:21.5.0-browsers
         steps:
             - checkout
             - browser-tools/install-browser-tools
@@ -58,7 +58,7 @@ jobs:
 
     publish:
       docker:
-        - image: cimg/node:14.19.0-browsers
+        - image: cimg/node:21.5.0-browsers
       steps:
         - checkout
         - attach_workspace:
